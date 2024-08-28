@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+header{
+  background-color: #4169e1;
+}
+header h1{
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+header nav li{
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+}
+header li a{
+  text-decoration: none;
+  color: #ecf0f1;
+}
+.cabeçalho{
+  max-width: 1280px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* PRIMEIRA <SECTION> SOBRE A LOJA */
+h2{
+  color: #4169e1;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  border-bottom:  3px #4169e1 solid;
+  display: block;
+}
+.container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 32px;
+  justify-items:center;
+}
+#sobre img{
+  max-width: 70%;
+}
+ #sobre .texto{
+  box-sizing: border-box;
+  width:600px;
+  padding: 16px;
+  justify-self: start;
+}
+
+/* SEGUNDA <SECTION> PRODUTOS */
+.pt{
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+.container-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  justify-items: center;
+}
+ul {
+  list-style: none;
+}
+.container-list li {
+  padding: 10px;
+  text-align: center;
+  max-width: 70%;;
+}
+li img {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+h3, .container p, .container button {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+@media (min-width: 641px) and (max-width: 1023px){
+  .container{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 32px;
+    justify-items:center;
+  }
+  #sobre img{
+    max-width: 100%;
+  }
+  .container-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+
+@media(max-width: 640px){
+  header nav li{
+    display:block;
+    margin-left: 16px;
+    font-size: 18px;
+  }
+  .cabeçalho{
+    padding: 8px;
+    margin: 0 auto;
+    display: flex;
+  }
+  #sobre img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #sobre .texto {
+    width: 100%;
+    padding: 16px 0;
+    justify-self: center;
+  }
+
+  .container-list {
+    grid-template-columns: 1fr;
+  }
+
+  .container-list li {
+    max-width: 100%;
+  }
+}
