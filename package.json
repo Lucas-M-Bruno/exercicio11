@@ -1,0 +1,12 @@
+{
+  "name": "loja-de-sapatos",
+  "version": "1.0.0",
+  "description": "Este é um projeto de uma página de loja de sapatos desenvolvida com HTML e CSS. O principal objetivo deste projeto foi colocar em prática meus estudos, criando um layout responsivo usando **Media Queries**, para garantir que o site se adapte a diferentes tamanhos de tela.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lucas Bruno <lucasmoura3108@gmail.com>",
+  "license": "MIT"
+}
